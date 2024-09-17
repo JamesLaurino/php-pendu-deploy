@@ -6,7 +6,7 @@
     $request = trim($request, '/'); 
     $segments = array_filter(explode('/', $request));
 
-    // Log les segments pour débogage
+    // Log les segments pour débogage # log en plus
     error_log(print_r($segments, true));
 
     if (!count($segments) or $segments[0] == 'index' or $segments[0] == 'index.php')
